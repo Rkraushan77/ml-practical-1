@@ -2,6 +2,8 @@
 
 import streamlit as st
 import numpy as np
+import pandas as pd
+
 import matplotlib.pyplot as plt
 from sklearn.datasets import load_diabetes
 from sklearn.model_selection import train_test_split
@@ -15,7 +17,7 @@ st.title("🩺 Diabetes Progression Prediction using Linear Regression")
 st.markdown("### Developed by Raushan Kumar")
 
 # Load dataset
-diabetes = diabetes_prediction_dataset()
+diabetes = pd.read_csv("diabetes_prediction_dataset.csv")
 X = diabetes.data
 y = diabetes.target
 
