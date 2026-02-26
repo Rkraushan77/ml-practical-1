@@ -19,7 +19,7 @@ st.markdown("### Developed by Raushan Kumar")
 # ------------------ LOAD DATA ------------------
 @st.cache_data
 def load_data():
-    df = pd.read_csv("titanic-dataset.csv")
+    df = pd.read_csv("Titanic-Dataset.csv")
     return df
 
 df = load_data()
