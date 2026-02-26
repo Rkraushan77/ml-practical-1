@@ -15,7 +15,7 @@ st.title("🩺 Diabetes Progression Prediction using Linear Regression")
 st.markdown("### Developed by Raushan Kumar")
 
 # Load dataset
-diabetes = load_diabetes()
+diabetes = diabetes_prediction_dataset()
 X = diabetes.data
 y = diabetes.target
 
