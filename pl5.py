@@ -18,8 +18,12 @@ st.markdown("### Developed by Raushan Kumar")
 
 # Load dataset
 diabetes = pd.read_csv("diabetes_prediction_dataset.csv")
-X = diabetes.data
-y = diabetes.target
+# Show columns once (temporary)
+st.write(diabetes.columns)
+
+# Assuming your target column is named "diabetes"
+X = diabetes.drop("diabetes", axis=1)
+y = diabetes["diabetes"]
 
 # Train-test split
 X_train, X_test, y_train, y_test = train_test_split(
